@@ -25,7 +25,7 @@ export const Cities = () => {
   return (
     <main className="flex-grow relative bg-cover bg-center h-auto" style={{ backgroundImage: 'url(./public/paisaje2.jpg)' }}>
       <div className="bg-black bg-opacity-50 py-16">
-        <h1 className='text-2xl text-white font-bold text-center mb-8'>Cities</h1> 
+        <h1 className="text-2xl text-white font-bold text-center mb-8">Cities</h1> 
         <div className="w-full flex justify-center mb-8">
           <input className="w-5/12 sm:w-80 rounded-lg border border-solid px-2 font-bold" type="text" placeholder="Search city" onInput={handleInput} ref={inputSearch} />
         </div>
