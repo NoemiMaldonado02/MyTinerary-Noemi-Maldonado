@@ -4,8 +4,8 @@ import { useLocation } from "react-router-dom";
 const Header = () => {
   const location = useLocation();
   const links = [ 
-    { path: "/", title: "Home", active: "/" === location.pathname, id: 1 },
-    { path: "/Cities", title: "Cities", active: "/Cities" === location.pathname, id: 2 }
+    { path: "/", title: "Home", active: "/" == location.pathname},
+    { path: "/Cities", title: "Cities", active: "/Cities" == location.pathname}
   ];
   
   return (
@@ -17,7 +17,7 @@ const Header = () => {
         </div>
         <nav className="flex items-center text-[#F1EEE8] border-gray-600 font-semibold gap-3 sm:gap-10 m-5">
           {links.map((link) => ( 
-            <Link key={link.id} className={`text-md sm:text-2xl rounded-lg text-center p-1 ${link.active ? "hover:bg-[#aaaa9a] transition duration-300 ease-in-out p-2" : ""}`} to={link.path}>{link.title}</Link>
+            <Link key={link.title} className={`text-md sm:text-2xl rounded-lg text-center p-1 ${link.active ? "hover:bg-[#aaaa9a] transition duration-300 ease-in-out p-2" : ""}`} to={link.path}>{link.title}</Link>
           ))}
           <img className="w-8 h-8 sm:w-10 sm:h-10" src="./usuario.png" alt="" />
         </nav>
