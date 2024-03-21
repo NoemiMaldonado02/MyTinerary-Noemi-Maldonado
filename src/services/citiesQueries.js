@@ -10,12 +10,12 @@ export const getCities = async () => {
     }
 };
 
-export const getCity = async (id) => {
+export const getCity = async (_id) => {
     try {
-        const response = await axios.get("http://localhost:4000/api/cities/" + id);
+        const response = await axios.get("http://localhost:4000/api/cities/" + _id);
         return response.data.data;
     } catch (error) {
-        console.error(`Error al obtener detalles de la ciudad con ID ${id}:`, error);
+        console.error(`Error al obtener detalles de la ciudad con ID ${_id}:`, error);
         return {};
     }
 };
