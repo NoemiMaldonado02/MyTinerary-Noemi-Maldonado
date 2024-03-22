@@ -12,7 +12,7 @@ const Hero = () =>{
           </div>
         </section>
         <section className="w-full h-auto">
-          <img src="./public/banner.png" className="w-auto h-auto sm:w-full sm:h-auto object-cover shadow-lg" alt="banner" />
+          <img src="/banner.png" className="w-auto h-auto sm:w-full sm:h-auto object-cover shadow-lg" alt="banner" />
         </section>
       </div>
     );
