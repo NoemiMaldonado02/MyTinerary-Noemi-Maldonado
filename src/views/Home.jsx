@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <main className="flex-grow bg-cover bg-center" style={{ backgroundImage: "url('/public/paisaje2.jpg')" }}>
+      <main className="flex-grow bg-cover bg-center" style={{ backgroundImage: "url('/paisaje2.jpg')" }}>
       {!(cities.length > 0) ? <h2>loading</h2> : <Carousel citys={citiesSelect} />}
       </main>
     </>
